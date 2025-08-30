@@ -64,9 +64,6 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
-  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -175,12 +172,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ItemName: Knife
   inputInfos: 0000000001000000
-  impactClip: {fileID: 0}
-  cutClip: {fileID: 0}
-  impactAudio: {fileID: 0}
+  impactAudio: {fileID: 11400000, guid: eedb103ff130e9b4ca08b5ca5846b06e, type: 2}
   cutAudio: {fileID: 0}
   impactDestroyable: 0
   cutParticleSystem: {fileID: 0}
+  canThrowGarbage: 1
 --- !u!114 &6202803779205859341
 MonoBehaviour:
   m_ObjectHideFlags: 0

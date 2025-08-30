@@ -6,8 +6,8 @@ using UnityEngine.Audio;
 public class Bowl : MonoBehaviour
 {
     private Item thisItem;
-    private Collider collider;
-    private Rigidbody rb;
+    [System.NonSerialized] public Collider coll;
+    [System.NonSerialized] public Rigidbody rb;
     public bool iced;
     public bool rosed;
     public bool bananad;
@@ -20,11 +20,10 @@ public class Bowl : MonoBehaviour
     public GameObject iceFilled;
     public GameObject lid;
     public AudioData placeAudio;
-    public AudioData packingAudio;
     void Awake()
     {
         thisItem = GetComponent<Item>();
-        collider = GetComponent<Collider>();
+        coll = GetComponent<Collider>();
         rb = GetComponent<Rigidbody>();
     }
     private void OnCollisionEnter(Collision other)
@@ -55,7 +54,7 @@ public class Bowl : MonoBehaviour
     public void FillIce(IceGrater iceGrater)
     {
         rb.isKinematic = true;
-        collider.enabled = false;
+        coll.enabled = false;
         Collider iceGraterCollider = iceGrater.GetComponent<Collider>();
         Rigidbody iceGraterRb = iceGrater.GetComponent<Rigidbody>();
         iceGraterCollider.enabled = false;
@@ -75,7 +74,7 @@ public class Bowl : MonoBehaviour
         {
             iceGrater.transform.GetChild(1).transform.DOLocalRotate(new Vector3(-90, 0, 0), 1f);
             rb.isKinematic = false;
-            collider.enabled = true;
+            coll.enabled = true;
             iceGraterCollider.enabled = true;
             iceGraterRb.isKinematic = false;
             int dir = UnityEngine.Random.value > 0.5f ? -1 : 1;
@@ -87,16 +86,5 @@ public class Bowl : MonoBehaviour
         thisItem.ItemName = "Bici Bici";
         rosed = true;
         iceFilled.GetComponent<Renderer>().material = biciMat;
-    }
-    void OnTriggerEnter(Collider other)
-    {
-        if (other.TryGetComponent(out OrderTray orderTray))
-        {
-            if (!lid.activeSelf)
-            {
-                lid.SetActive(true);
-                packingAudio.Play2D(this);
-            }
-        }
     }
 }

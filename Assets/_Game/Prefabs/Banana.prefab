@@ -96,7 +96,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ItemName: Banana
   inputInfos: 0000000001000000
-  impactAudio: {fileID: 0}
+  impactAudio: {fileID: 11400000, guid: eedb103ff130e9b4ca08b5ca5846b06e, type: 2}
   cutAudio: {fileID: 11400000, guid: 17c180086410361438f9d2e188e1659a, type: 2}
   impactDestroyable: 0
   cutParticleSystem: {fileID: 482082243188984780}
@@ -232,7 +232,7 @@ PrefabInstance:
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 5169066500353666827, guid: d498ed328648053419fd9516a7dfdf18, type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
+      propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: cd3f3e5f9f8e497408b3e6dfb23facd3, type: 2}
     m_RemovedComponents: []

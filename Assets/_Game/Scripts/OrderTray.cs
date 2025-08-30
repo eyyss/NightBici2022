@@ -12,6 +12,8 @@ public class OrderTray : MonoBehaviour
     }
     void OnTriggerStay(Collider other)
     {
+        if (other.TryGetComponent(out Bowl bowl) && !bowl.lid.activeSelf) return;// kase ise ve kapatilmamissa sayma
+
         if (!items.Contains(other))
             items.Add(other);
     }

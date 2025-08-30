@@ -51,5 +51,6 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "NightBici2022.sln"
+    "dotnet.defaultSolution": "NightBici2022.sln",
+    "dotnet.preferCSharpExtension": true
 }
