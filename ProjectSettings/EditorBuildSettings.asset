@@ -1,0 +1,10 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes: []
+  m_configObjects:
+    com.unity.addressableassets: {fileID: 11400000, guid: 21d2de72e3074d348ae7615b78ec8d14, type: 2}
+    com.unity.localization.settings: {fileID: 11400000, guid: 31e13d8c8a3739546936c6d73db413b2, type: 2}
