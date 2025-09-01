@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5be51871efa6c3e4eae1703925c8f5ac, type: 3}
+  m_Name: HouseScene
+  m_EditorClassIdentifier: 
+  m_SharedTableData: {fileID: 11400000, guid: 6aab6a573a0898e4bb8b8559d53b289e, type: 2}
+  m_Tables:
+  - {fileID: 11400000, guid: a94d21de04272914eb1f2dc40ef115f5, type: 2}
+  - {fileID: 11400000, guid: edf6b07dfe61c3b42bd0a8318727dd68, type: 2}
+  - {fileID: 11400000, guid: c74d63187b7cb114c9610240e87aba97, type: 2}
+  - {fileID: 11400000, guid: 42f06699de55da44f8e0d63c2da5ac07, type: 2}
+  - {fileID: 11400000, guid: 596dadc1778567449913d67d71668fb7, type: 2}
+  - {fileID: 11400000, guid: 2eb8b664e0e956349a7027ede6a66956, type: 2}
+  m_Extensions: []
+  m_Group: String Table
+  references:
+    version: 2
+    RefIds: []

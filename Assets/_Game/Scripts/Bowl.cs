@@ -9,6 +9,7 @@ public class Bowl : MonoBehaviour
     [System.NonSerialized] public Collider coll;
     [System.NonSerialized] public Rigidbody rb;
     public bool iced;
+    public bool starched;
     public bool rosed;
     public bool bananad;
     public bool watermelond;
@@ -17,6 +18,7 @@ public class Bowl : MonoBehaviour
     public Material biciMat;
     public GameObject bananaSlicesParent;
     public GameObject watermelonSlicesParent;
+    public GameObject stachSlicesParent;
     public GameObject iceFilled;
     public GameObject lid;
     public AudioData placeAudio;
@@ -47,6 +49,13 @@ public class Bowl : MonoBehaviour
             placeAudio.Play2D(this);
             watermelond = true;
             watermelonSlicesParent.SetActive(true);
+            Destroy(other.gameObject);
+        }
+        if (!starched && iced && other.gameObject.TryGetComponent(out item) && item.ItemName == "Starch" && other.rigidbody.useGravity)
+        {
+            placeAudio.Play2D(this);
+            starched = true;
+            stachSlicesParent.SetActive(true);
             Destroy(other.gameObject);
         }
 

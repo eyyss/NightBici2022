@@ -13,14 +13,10 @@ MonoBehaviour:
   m_Name: Localization-Asset-Tables-Russian (ru)
   m_EditorClassIdentifier: 
   m_GroupName: Localization-Asset-Tables-Russian (ru)
+  m_Data:
+    m_SerializedData: []
   m_GUID: eafd2771e63cd7545b3684dcee3078d0
-  m_SerializeEntries:
-  - m_GUID: e8beb8d6912998d47bae49c31c36fb67
-    m_Address: TestAudio_ru
-    m_ReadOnly: 1
-    m_SerializedLabels:
-    - Locale-ru
-    FlaggedDuringContentUpdateRestriction: 0
+  m_SerializeEntries: []
   m_ReadOnly: 1
   m_Settings: {fileID: 11400000, guid: 12801951815fff341930d63ff7c87054, type: 2}
   m_SchemaSet:

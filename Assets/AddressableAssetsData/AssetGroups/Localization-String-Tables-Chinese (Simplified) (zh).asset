@@ -17,14 +17,15 @@ MonoBehaviour:
     m_SerializedData: []
   m_GUID: 6b224f766e711bb4ab555a8b5469e292
   m_SerializeEntries:
-  - m_GUID: 2870b625b3c682c4ba6a88b8b943492a
-    m_Address: EnteranceDialogues_zh
+  - m_GUID: 747ba46224e678143910958db9c72256
+    m_Address: Dialogues_zh
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-zh
+    - Preload
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 747ba46224e678143910958db9c72256
-    m_Address: Dialogues_zh
+  - m_GUID: edf6b07dfe61c3b42bd0a8318727dd68
+    m_Address: HouseScene_zh
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-zh

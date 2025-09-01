@@ -1,8 +1,11 @@
 
 using System;
+using System.Collections;
 using DG.Tweening;
+using EasyPeasyFirstPersonController;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class UIController : MonoBehaviour
@@ -13,10 +16,28 @@ public class UIController : MonoBehaviour
     public TextMeshProUGUI interactItemNameText;
     public GameObject interactItemNameTextParent;
     public GameObject[] inputInfos;
+    public Image fadeImage;
+    public TextMeshProUGUI currentDayText;
+    public TextMeshProUGUI infoText;
+    public GameObject phonePanel;
     void Awake()
     {
         cam = Camera.main;
         Singelton = this;
+    }
+    void Start()
+    {
+        ResetInfo();
+        if (SceneManager.GetActiveScene().name == "Gameplay")
+        {
+            FirstPersonController.Singelton.SetControl(false);
+            currentDayText.text = "Day 1";
+            currentDayText.DOColor(Color.clear, 2f).SetDelay(2f);
+            FadeOut(2f, delegate
+            {
+                FirstPersonController.Singelton.SetControl(true);
+            });
+        }
     }
     void Update()
     {
@@ -63,6 +84,15 @@ public class UIController : MonoBehaviour
         {
             crosshairIn.transform.localScale = Vector3.Lerp(crosshairIn.transform.localScale, Vector3.zero, Time.deltaTime * 15f);
         }
+
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            phonePanel.SetActive(!phonePanel.activeSelf);
+            bool state = phonePanel.activeSelf;
+            FirstPersonController.Singelton.SetControl(!state);
+            Cursor.lockState = !state ? CursorLockMode.Locked : CursorLockMode.None;
+            Cursor.visible = state ? true : false;
+        }
     }
     public void OpenInputPanel(int[] infos)
     {
@@ -77,6 +107,56 @@ public class UIController : MonoBehaviour
         {
             inputInfos[item].SetActive(false);
         }
+    }
+
+    public void FadeIn(float duration, Action onComplete = null)
+    {
+        if (fadeImage == null) return;
+        fadeImage.gameObject.SetActive(true);
+        StartCoroutine(FadeRoutine(0f, 1f, duration, onComplete));
+    }
+
+    // Fade Out
+    public void FadeOut(float duration, Action onComplete = null)
+    {
+        if (fadeImage == null) return;
+        fadeImage.gameObject.SetActive(true);
+        StartCoroutine(FadeRoutine(1f, 0f, duration, () =>
+        {
+            fadeImage.gameObject.SetActive(false);
+            onComplete?.Invoke();
+        }));
+    }
+    private IEnumerator FadeRoutine(float startAlpha, float endAlpha, float duration, Action onComplete)
+    {
+        float elapsed = 0f;
+        Color color = fadeImage.color;
+        color.a = startAlpha;
+        fadeImage.color = color;
+
+        while (elapsed < duration)
+        {
+            elapsed += Time.deltaTime;
+            float alpha = Mathf.Lerp(startAlpha, endAlpha, elapsed / duration);
+            color.a = alpha;
+            fadeImage.color = color;
+            yield return null;
+        }
+
+        // Ensure final alpha
+        color.a = endAlpha;
+        fadeImage.color = color;
+
+        onComplete?.Invoke();
+    }
+    public void ShowInfo(string info, float duration = 3f)
+    {
+        infoText.text = info;
+        Invoke(nameof(ResetInfo), duration);
+    }
+    private void ResetInfo()
+    {
+        infoText.text = string.Empty;
     }
 
 }

@@ -13,14 +13,10 @@ MonoBehaviour:
   m_Name: Localization-Asset-Tables-Turkish (tr)
   m_EditorClassIdentifier: 
   m_GroupName: Localization-Asset-Tables-Turkish (tr)
+  m_Data:
+    m_SerializedData: []
   m_GUID: 834d41148938d864eb725aa2e104d27d
-  m_SerializeEntries:
-  - m_GUID: 836b623f01b13ec48a520e811ccb2cdf
-    m_Address: TestAudio_tr
-    m_ReadOnly: 1
-    m_SerializedLabels:
-    - Locale-tr
-    FlaggedDuringContentUpdateRestriction: 0
+  m_SerializeEntries: []
   m_ReadOnly: 1
   m_Settings: {fileID: 11400000, guid: 12801951815fff341930d63ff7c87054, type: 2}
   m_SchemaSet:

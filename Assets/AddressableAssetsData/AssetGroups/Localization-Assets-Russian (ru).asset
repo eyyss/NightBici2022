@@ -13,14 +13,10 @@ MonoBehaviour:
   m_Name: Localization-Assets-Russian (ru)
   m_EditorClassIdentifier: 
   m_GroupName: Localization-Assets-Russian (ru)
+  m_Data:
+    m_SerializedData: []
   m_GUID: 72002c7c41fb31b489d8cb1dd15c5042
-  m_SerializeEntries:
-  - m_GUID: e630d5bb800803f49bbb5761daac0360
-    m_Address: running_refrigerator_ambience-77245
-    m_ReadOnly: 1
-    m_SerializedLabels:
-    - Locale-ru
-    FlaggedDuringContentUpdateRestriction: 0
+  m_SerializeEntries: []
   m_ReadOnly: 1
   m_Settings: {fileID: 11400000, guid: 12801951815fff341930d63ff7c87054, type: 2}
   m_SchemaSet:

@@ -24,11 +24,12 @@ MonoBehaviour:
     - Locale-de-DE
     - Preload
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 21d51ab2dfccd4c45a848d28b5b49b6e
-    m_Address: EnteranceDialogues_de-DE
+  - m_GUID: c74d63187b7cb114c9610240e87aba97
+    m_Address: HouseScene_de-DE
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-de-DE
+    - Preload
     FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 1
   m_Settings: {fileID: 11400000, guid: 12801951815fff341930d63ff7c87054, type: 2}

@@ -13,14 +13,10 @@ MonoBehaviour:
   m_Name: Localization-Assets-English (en)
   m_EditorClassIdentifier: 
   m_GroupName: Localization-Assets-English (en)
+  m_Data:
+    m_SerializedData: []
   m_GUID: c04ebcb1468d4c54ebe5c4079edc207e
-  m_SerializeEntries:
-  - m_GUID: ddcee83a906350e41ab94e54ababbcb3
-    m_Address: Bell Ring
-    m_ReadOnly: 1
-    m_SerializedLabels:
-    - Locale-en
-    FlaggedDuringContentUpdateRestriction: 0
+  m_SerializeEntries: []
   m_ReadOnly: 1
   m_Settings: {fileID: 11400000, guid: 12801951815fff341930d63ff7c87054, type: 2}
   m_SchemaSet:

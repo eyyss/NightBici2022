@@ -186,6 +186,9 @@ public class DialogController : MonoBehaviour
         StartCoroutine(waitForFrameAndUnblock());
         dialogDoneEvent.Invoke(currentDialog, childTextCounter, true);
         dialogActive = false;
+
+        EventManager.Singelton.InvokeEvent("EndDialogue" + currentDialog);
+
     }
 
     private IEnumerator waitForFrameAndUnblock()

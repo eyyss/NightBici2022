@@ -13,14 +13,10 @@ MonoBehaviour:
   m_Name: Localization-Asset-Tables-Chinese (Simplified) (zh)
   m_EditorClassIdentifier: 
   m_GroupName: Localization-Asset-Tables-Chinese (Simplified) (zh)
+  m_Data:
+    m_SerializedData: []
   m_GUID: 55291a6dd84f1674e9788d7b42ee97d9
-  m_SerializeEntries:
-  - m_GUID: 045099b0e09f8284b8644e64aa957d8f
-    m_Address: TestAudio_zh
-    m_ReadOnly: 1
-    m_SerializedLabels:
-    - Locale-zh
-    FlaggedDuringContentUpdateRestriction: 0
+  m_SerializeEntries: []
   m_ReadOnly: 1
   m_Settings: {fileID: 11400000, guid: 12801951815fff341930d63ff7c87054, type: 2}
   m_SchemaSet:

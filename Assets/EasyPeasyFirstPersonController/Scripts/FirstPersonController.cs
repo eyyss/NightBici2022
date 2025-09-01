@@ -123,6 +123,11 @@ namespace EasyPeasyFirstPersonController
             slideAudioSource.playOnAwake = false;
             slideAudioSource.loop = false;
             Cursor.lockState = CursorLockMode.Locked;
+
+            rotX = transform.rotation.eulerAngles.y;
+            rotY = playerCamera.localRotation.eulerAngles.x;
+            xVelocity = rotX;
+            yVelocity = rotY;
         }
 
         private void Update()
@@ -167,7 +172,7 @@ namespace EasyPeasyFirstPersonController
 
             bool wantsToCrouch = canCrouch && Input.GetKey(KeyCode.LeftControl) && !isSliding && !blockGlobal;
             Vector3 point1 = transform.position + characterController.center - Vector3.up * (characterController.height * 0.5f);
-            Vector3 point2 = point1 + Vector3.up * characterController.height * 0.6f;
+            Vector3 point2 = point1 + Vector3.up * characterController.height * 0.4f;
             float capsuleRadius = characterController.radius * 0.95f;
             float castDistance = isSliding ? originalHeight + 0.2f : originalHeight - crouchHeight + 0.2f;
             bool hasCeiling = Physics.CapsuleCast(point1, point2, capsuleRadius, Vector3.up, castDistance, groundMask);

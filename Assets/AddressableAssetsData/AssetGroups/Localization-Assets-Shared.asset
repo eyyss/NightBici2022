@@ -13,15 +13,12 @@ MonoBehaviour:
   m_Name: Localization-Assets-Shared
   m_EditorClassIdentifier: 
   m_GroupName: Localization-Assets-Shared
+  m_Data:
+    m_SerializedData: []
   m_GUID: ba94084281693f0408651884f6af67d1
   m_SerializeEntries:
-  - m_GUID: 1f834fdd98900df439c25d4a89903ac0
-    m_Address: Assets/_Game/Localization/EnteranceDialogues Shared Data.asset
-    m_ReadOnly: 1
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 310eabfd9141e064398b1a34854ff834
-    m_Address: Assets/_Game/Localization/TestAudio Shared Data.asset
+  - m_GUID: 6aab6a573a0898e4bb8b8559d53b289e
+    m_Address: Assets/_Game/Localization/HouseScene Shared Data.asset
     m_ReadOnly: 1
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0

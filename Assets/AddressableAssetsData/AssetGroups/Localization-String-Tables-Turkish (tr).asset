@@ -17,11 +17,12 @@ MonoBehaviour:
     m_SerializedData: []
   m_GUID: 917d4edd9f6a4b841a41746822abffc2
   m_SerializeEntries:
-  - m_GUID: 55020bc38b5681d48b4dc288663d7c16
-    m_Address: EnteranceDialogues_tr
+  - m_GUID: 2eb8b664e0e956349a7027ede6a66956
+    m_Address: HouseScene_tr
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-tr
+    - Preload
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 6dfa5943a8135404db536cbea2ce7598
     m_Address: Dialogues_tr

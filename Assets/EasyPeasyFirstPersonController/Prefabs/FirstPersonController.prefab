@@ -25,7 +25,7 @@ Transform:
   m_GameObject: {fileID: 4183255436865344568}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0.8}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -173,8 +173,8 @@ Camera:
   m_GameObject: {fileID: 9156347143994207886}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 2
-  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: 1, g: 1, b: 1, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -204,7 +204,7 @@ Camera:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_RenderingPath: 3
+  m_RenderingPath: 1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
   m_TargetEye: 3
@@ -431,7 +431,7 @@ MonoBehaviour:
   bleedLength: 24
   bleedCurveEditModeOn: 0
   bleedCurveIQSyncOn: 1
-  fisheyeOn: 1
+  fisheyeOn: 0
   fisheyeBend: 2
   fisheyeType: 0
   fisheyeSize: 1.2
@@ -607,6 +607,9 @@ MonoBehaviour:
     audioData: {fileID: 11400000, guid: 8eac9e09d21c3604c80243d41c5548b2, type: 2}
   - materialNames:
     - Metal
+    audioData: {fileID: 11400000, guid: afb29f66eab468d45af1892603dec44d, type: 2}
+  - materialNames:
+    - Wood
     audioData: {fileID: 11400000, guid: afb29f66eab468d45af1892603dec44d, type: 2}
 --- !u!1 &9156347144365898844
 GameObject:
