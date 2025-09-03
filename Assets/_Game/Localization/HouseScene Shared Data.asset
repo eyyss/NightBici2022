@@ -27,6 +27,46 @@ MonoBehaviour:
     m_Key: House_3
     m_Metadata:
       m_Items: []
+  - m_Id: 745531626205184
+    m_Key: House_4
+    m_Metadata:
+      m_Items: []
+  - m_Id: 745671573352448
+    m_Key: House_5
+    m_Metadata:
+      m_Items: []
+  - m_Id: 745734018150400
+    m_Key: House_6
+    m_Metadata:
+      m_Items: []
+  - m_Id: 745763986452480
+    m_Key: House_7
+    m_Metadata:
+      m_Items: []
+  - m_Id: 745846966562816
+    m_Key: House_8
+    m_Metadata:
+      m_Items: []
+  - m_Id: 745900448133120
+    m_Key: House_9
+    m_Metadata:
+      m_Items: []
+  - m_Id: 746048427372544
+    m_Key: House_10
+    m_Metadata:
+      m_Items: []
+  - m_Id: 768061929926656
+    m_Key: Sticky_Note_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 768152434618368
+    m_Key: Sticky_Note_2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 768310304026624
+    m_Key: Sticky_Note_3
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

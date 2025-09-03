@@ -205,7 +205,7 @@ Camera:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingPath: 1
-  m_TargetTexture: {fileID: 0}
+  m_TargetTexture: {fileID: 8400000, guid: 08b8d1a4b79d4c04c9cadb4b452bacdb, type: 2}
   m_TargetDisplay: 0
   m_TargetEye: 3
   m_HDR: 1
@@ -352,9 +352,9 @@ MonoBehaviour:
   g_showBypass: 0
   bleedOn: 1
   crtMode: 0
-  crtLinesMode: 0
-  screenLinesNum: 0
-  bleedAmount: 1
+  crtLinesMode: 1
+  screenLinesNum: 240
+  bleedAmount: 0.4
   bleedDebugOn: 0
   bleedCurveY:
     serializedVersion: 2
@@ -450,7 +450,7 @@ MonoBehaviour:
   signalNoiseOn: 1
   signalNoiseAmount: 0.15
   signalNoisePower: 0.83
-  tapeNoiseOn: 1
+  tapeNoiseOn: 0
   tapeNoiseTH: 0.63
   tapeNoiseAmount: 1
   tapeNoiseSpeed: 1
@@ -461,7 +461,7 @@ MonoBehaviour:
   scanLineWidth: 10
   linesFloatOn: 0
   linesFloatSpeed: 1
-  stretchOn: 1
+  stretchOn: 0
   twitchHOn: 0
   twitchHFreq: 1
   twitchVOn: 0

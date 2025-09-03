@@ -19,7 +19,7 @@ public class UIController : MonoBehaviour
     public Image fadeImage;
     public TextMeshProUGUI currentDayText;
     public TextMeshProUGUI infoText;
-    public GameObject phonePanel;
+
     void Awake()
     {
         cam = Camera.main;
@@ -83,15 +83,6 @@ public class UIController : MonoBehaviour
         else
         {
             crosshairIn.transform.localScale = Vector3.Lerp(crosshairIn.transform.localScale, Vector3.zero, Time.deltaTime * 15f);
-        }
-
-        if (Input.GetKeyDown(KeyCode.P))
-        {
-            phonePanel.SetActive(!phonePanel.activeSelf);
-            bool state = phonePanel.activeSelf;
-            FirstPersonController.Singelton.SetControl(!state);
-            Cursor.lockState = !state ? CursorLockMode.Locked : CursorLockMode.None;
-            Cursor.visible = state ? true : false;
         }
     }
     public void OpenInputPanel(int[] infos)

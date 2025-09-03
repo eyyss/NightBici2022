@@ -1,3 +1,4 @@
+using EasyPeasyFirstPersonController;
 using UnityEngine;
 
 public class InteractionController : MonoBehaviour
@@ -11,9 +12,16 @@ public class InteractionController : MonoBehaviour
 
     public Light spotLight;
     public AudioData lightOpenAudio;
+
+    private FirstPersonController fpsController;
+    void Start()
+    {
+        fpsController = FirstPersonController.Singelton;
+    }
     void Update()
     {
         //DrawOutline();
+        if (fpsController.blockGlobal) return;
 
         if (Input.GetKeyDown(KeyCode.F))
         {

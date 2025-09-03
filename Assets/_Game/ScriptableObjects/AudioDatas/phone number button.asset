@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 595fea27c56d4734eb568ab0ae0cd07d, type: 3}
+  m_Name: phone number button
+  m_EditorClassIdentifier: 
+  audioClips:
+  - {fileID: 8300000, guid: cdf02f8961564e240b7f6f11b84c329a, type: 3}
+  - {fileID: 8300000, guid: 0b1c102c56ed5344980be977e16d31e5, type: 3}
+  - {fileID: 8300000, guid: 78acba5d48015d94a8b60f6e66ec9a52, type: 3}
+  - {fileID: 8300000, guid: 0769aa924edad1b44b4e19a8f95894b6, type: 3}
+  - {fileID: 8300000, guid: 1afe98db92f589f4daaa60689115bf97, type: 3}
+  group: {fileID: 0}
+  volume: 0.111
+  minPitch: 1
+  maxPitch: 1

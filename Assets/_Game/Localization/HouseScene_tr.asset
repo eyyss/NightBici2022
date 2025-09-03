@@ -23,12 +23,55 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1309285191680
-    m_Localized: "\u015Eimdi midem kaz\u0131n\u0131yor."
+    m_Localized: "Midem kaz\u0131n\u0131yor."
     m_Metadata:
       m_Items: []
   - m_Id: 40858904334336
     m_Localized: "San\u0131r\u0131m d\u0131\u015Far\u0131dan bir \u015Feyler sipari\u015F
       etmeliyim."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 745531626205184
+    m_Localized: "G\xFCnayd\u0131n! Size nas\u0131l yard\u0131mc\u0131 olabilirim?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 745671573352448
+    m_Localized: "G\xFCnayd\u0131n! Ben kahvalt\u0131 i\xE7in bir pizza sipari\u015F
+      vermek istiyorum."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 745734018150400
+    m_Localized: "Tabii, hangi pizzam\u0131z\u0131 tercih edersiniz?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 745763986452480
+    m_Localized: "Kahvalt\u0131l\u0131k men\xFCn\xFCzdeki yumurtal\u0131 ve sucuklu
+      pizzay\u0131 alabilir miyim?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 745846966562816
+    m_Localized: "Elbette. Orta boy mu, b\xFCy\xFCk boy mu olsun?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 745900448133120
+    m_Localized: Orta boy olsun.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 746048427372544
+    m_Localized: "Te\u015Fekk\xFCrler. Sipari\u015Finiz yakla\u015F\u0131k 15 dakika
+      i\xE7inde elinizde olacak. "
+    m_Metadata:
+      m_Items: []
+  - m_Id: 768061929926656
+    m_Localized: Haziran 15
+    m_Metadata:
+      m_Items: []
+  - m_Id: 768152434618368
+    m_Localized: "Al\u0131\u015Fveri\u015F listesi:\nS\xFCt, yumurta, ekmek, peynir"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 768310304026624
+    m_Localized: "S\u0131ska Pizza: 5554213"
     m_Metadata:
       m_Items: []
   references:

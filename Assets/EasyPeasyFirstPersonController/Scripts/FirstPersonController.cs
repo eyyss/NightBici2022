@@ -64,7 +64,7 @@ namespace EasyPeasyFirstPersonController
         private Vector3 recoil = Vector3.zero;
         private bool isLook = true, isMove = true;
         private bool isFocused = false;
-        private bool blockGlobal = false;
+        public bool blockGlobal = false;
 
         public float CurrentCameraHeight => isCrouching || isSliding ? crouchCameraHeight : originalCameraParentHeight;
 
@@ -81,7 +81,7 @@ namespace EasyPeasyFirstPersonController
         }
         private void HandleFootstep()
         {
-            if (moveInput.magnitude <= 0) return;
+            if (moveInput.magnitude <= 0 || blockGlobal) return;
             if (Physics.Raycast(groundCheck.position, Vector3.down, out RaycastHit hit, 0.5f, groundMask))
             {
                 if (hit.collider != null && hit.collider.TryGetComponent(out Renderer renderer))
@@ -298,7 +298,7 @@ namespace EasyPeasyFirstPersonController
 
         public void SetControl(bool newState)
         {
-            if (blockGlobal) return;
+            blockGlobal = !newState;
             isLook = newState;
             isMove = newState;
         }
@@ -334,7 +334,6 @@ namespace EasyPeasyFirstPersonController
         public void Focus(bool value)
         {
             isFocused = value;
-            blockGlobal = value;
         }
 
         public void SetCursorVisibility(bool newVisibility)
