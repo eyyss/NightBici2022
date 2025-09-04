@@ -354,7 +354,7 @@ MonoBehaviour:
   crtMode: 0
   crtLinesMode: 1
   screenLinesNum: 240
-  bleedAmount: 0.4
+  bleedAmount: 0.2
   bleedDebugOn: 0
   bleedCurveY:
     serializedVersion: 2
@@ -597,9 +597,13 @@ MonoBehaviour:
   isSprinting: 0
   isCrouching: 0
   isSliding: 0
+  blockGlobal: 0
   normalFootstepTime: 0.6
   sprintFootstepTime: 0.4
   crouchFootstepTime: 1.2
+  currentFoostepData:
+    materialNames: []
+    audioData: {fileID: 0}
   footstepDatas:
   - materialNames:
     - Tile
@@ -610,7 +614,10 @@ MonoBehaviour:
     audioData: {fileID: 11400000, guid: afb29f66eab468d45af1892603dec44d, type: 2}
   - materialNames:
     - Wood
-    audioData: {fileID: 11400000, guid: afb29f66eab468d45af1892603dec44d, type: 2}
+    audioData: {fileID: 11400000, guid: 17a98ed6379adb94ea29079ec8e37d3e, type: 2}
+  - materialNames:
+    - Grass
+    audioData: {fileID: 11400000, guid: 9d8bc5d34126fa3439b7f7801ac7c868, type: 2}
 --- !u!1 &9156347144365898844
 GameObject:
   m_ObjectHideFlags: 0

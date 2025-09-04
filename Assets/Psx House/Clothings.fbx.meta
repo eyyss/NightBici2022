@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 0cb36f3c3baea6c4a81674871034c057
+guid: 3b17a311824985f41aba88011963fcb4
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -7,38 +7,23 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Bus_stop_01
-    second: {fileID: 2100000, guid: ebe73f4c75ffc2840945c00379d38fe6, type: 2}
+      name: Clothings.001
+    second: {fileID: 2100000, guid: 3b87b0b0ae787f74ea96287f10b5d14e, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Bus_stop_sign_01
-    second: {fileID: 2100000, guid: a16a7b407cffb1c4e8e7bc33e2060c81, type: 2}
+      name: WoodFine.001
+    second: {fileID: 2100000, guid: 39de8a02185fe314cbab9dfbba016a59, type: 2}
   - first:
-      type: UnityEngine:Material
+      type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
-      name: Land
-    second: {fileID: 2100000, guid: e886359e5d70c1c45bed666e69e30674, type: 2}
+      name: Clothings
+    second: {fileID: 2800000, guid: 40a029cb45e3910449794af7500060c3, type: 3}
   - first:
-      type: UnityEngine:Material
+      type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
-      name: Tree_02
-    second: {fileID: 2100000, guid: 4a2e2b380a630c047b9598fe2dd45711, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Tree_03
-    second: {fileID: 2100000, guid: 22cfaaf63e18e234ea4889ec35d590ab, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Windows_01
-    second: {fileID: 2100000, guid: e9bca5ed63a04584b933123588d6cfe6, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: fence_metal
-    second: {fileID: 2100000, guid: c999866e522f1954299f822acde53f6f, type: 2}
+      name: WoodFine
+    second: {fileID: 2800000, guid: 944f7788440796e4e97f8ac7830a6d5c, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0

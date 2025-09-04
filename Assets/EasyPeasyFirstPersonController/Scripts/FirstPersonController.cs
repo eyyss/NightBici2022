@@ -72,6 +72,7 @@ namespace EasyPeasyFirstPersonController
         public float sprintFootstepTime = 0.4f;
         public float crouchFootstepTime = 1.2f;
         private float footstepTimer = 0.6f;
+        public FootstepData currentFoostepData;
         public List<FootstepData> footstepDatas;
         [System.Serializable]
         public class FootstepData
@@ -91,6 +92,7 @@ namespace EasyPeasyFirstPersonController
                     foostepData = footstepDatas.FirstOrDefault(
                         item => item.materialNames.Any(matName => mat.name.Contains(matName))
                     );
+                    currentFoostepData = foostepData;
 
                     if (foostepData != null)
                     {

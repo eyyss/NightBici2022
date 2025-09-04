@@ -74,6 +74,18 @@ MonoBehaviour:
     m_Localized: "S\u0131ska Pizza: 5554213"
     m_Metadata:
       m_Items: []
+  - m_Id: 1202307158265856
+    m_Localized: "Teslim edilene kadar bo\u015F bo\u015F bekleyecek halim yok\u2026"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1203490761494528
+    m_Localized: "\xC7ama\u015F\u0131rlar\u0131 toplayabilirim."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1203616322179072
+    m_Localized: "Bari onlar\u0131 halledeyim."
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
