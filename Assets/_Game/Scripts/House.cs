@@ -6,6 +6,7 @@ public class House : MonoBehaviour
 {
     public static House Singelton;
     public int collectedClothing;
+    public GameObject previewBasket;
     void Awake()
     {
         Singelton = this;
@@ -36,6 +37,7 @@ public class House : MonoBehaviour
         if (collectedClothing >= 3)
         {
             EventManager.Singelton.InvokeEvent("ClothingsCollected");
+            previewBasket.SetActive(true);
         }
     }
     public void ShowLaundryGoRoomInfo()
