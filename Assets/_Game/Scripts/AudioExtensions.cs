@@ -37,7 +37,7 @@ public static class AudioExtensions
         audioSource.pitch = pitch;
         audioSource.clip = clip;
         audioSource.spatialBlend = 1;
-        audioSource.maxDistance = 4;
+        audioSource.maxDistance = 15;
         audioSource.Play();
         GameObject.Destroy(audioSource.gameObject, clip.length);
         return audioSource;

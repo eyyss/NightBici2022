@@ -10,6 +10,10 @@ public class Item : MonoBehaviour
     public bool impactDestroyable = false;
     public ParticleSystem cutParticleSystem;
     public bool canThrowGarbage = true;
+    void Start()
+    {
+
+    }
     void Awake()
     {
         rb = GetComponent<Rigidbody>();

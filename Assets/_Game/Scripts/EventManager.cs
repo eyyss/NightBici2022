@@ -33,6 +33,7 @@ public class EventManager : MonoBehaviour
 
     public void InvokeEvent(string eventID)
     {
+        FindAndSetupEventObject();
         Debug.Log("<color=green>Event with id = " + eventID + " invoked!</color>");
         customEvent.Invoke(eventID);
     }

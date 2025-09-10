@@ -86,6 +86,86 @@ MonoBehaviour:
     m_Localized: "Bari onlar\u0131 halledeyim."
     m_Metadata:
       m_Items: []
+  - m_Id: 2172089907040256
+    m_Localized: "T\xFCnayd\u0131n, sipari\u015Finiz burada."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2172272115994624
+    m_Localized: "Te\u015Fekk\xFCrler. Motorla gelmediniz mi?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2172383751589888
+    m_Localized: "Motor bozuldu\u2026 o y\xFCzden market arabas\u0131yla getirdim."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2172432707506176
+    m_Localized: "Hmm, \xF6nemli de\u011Fil. Ne kadar tutuyor?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2175372843307008
+    m_Localized: Sadece 300 TL.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2175589806264320
+    m_Localized: Buyrun, kolay gelsin.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2569946338185216
+    m_Localized: Alo?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2570039665643520
+    m_Localized: "Ben Ethan\u2026 "
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2570371418312704
+    m_Localized: "eski bici bici d\xFCkk\xE2n\u0131ndaki arkada\u015F\u0131n."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2570689845678080
+    m_Localized: "Hmm, hat\u0131rlad\u0131m, nas\u0131ls\u0131n?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2570754911916032
+    m_Localized: "\u0130yiyim\u2026 asl\u0131nda aramam\u0131n bir sebebi var\u2026"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2570840945479680
+    m_Localized: "Sana ger\xE7ekten ihtiyac\u0131m var."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2571055727398912
+    m_Localized: "Annem i\xE7in ba\u015Fka bir \xFClkeye gitmem gerekiyor, ameliyat
+      olacak."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2571111461310464
+    m_Localized: "Bu y\xFCzden d\xFCkkan\u0131 bir s\xFCreli\u011Fine b\u0131rakmak
+      zorunday\u0131m."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2571167664984064
+    m_Localized: "Biliyorum, uzun zamand\u0131r gece vardiyas\u0131nda \xE7al\u0131\u015Fm\u0131yorsun\u2026"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2592524540858368
+    m_Localized: "Ama eskiden gece \xE7al\u0131\u015Fmaya al\u0131\u015F\u0131ks\u0131n
+      zaten, senin i\xE7in kolay olacak."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2592605272821760
+    m_Localized: "Etraftaki tek bici bici d\xFCkk\xE2n\u0131 biziz, m\xFC\u015Fterilerimizi
+      kaybetmek istemiyoruz."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2592613430743040
+    m_Localized: "Biletini ald\u0131m bile, sadece valizini haz\u0131rla yeter."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2648353008799744
+    m_Localized: "Tamam, e\u015Fyalar\u0131m\u0131 toplay\u0131p yola \xE7\u0131k\u0131yorum."
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

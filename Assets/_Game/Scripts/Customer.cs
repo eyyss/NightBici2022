@@ -99,7 +99,6 @@ public class Customer : MonoBehaviour, ILeftClickable
                 DOVirtual.DelayedCall(6, delegate { gameObject.SetActive(false); });
                 CustomerManager.Singelton.SpawnNextCustomer(6f);
                 CashRegister.Singelton.SetOrders(null, null);
-                Debug.Log("testtttt");
             }
             string eventName = "dialog" + doneDialogueIndex;
             EventManager.Singelton.InvokeEvent(eventName);

@@ -7,6 +7,7 @@ public class House : MonoBehaviour
     public static House Singelton;
     public int collectedClothing;
     public GameObject previewBasket;
+    public AudioSource inComingCallAudioSource;
     void Awake()
     {
         Singelton = this;
@@ -44,4 +45,21 @@ public class House : MonoBehaviour
     {
         UIController.Singelton.ShowInfo("(!) Çamaşır sepetini al ve odana götür", 5);
     }
+    public void InComingCall()
+    {
+        inComingCallAudioSource.Play();
+        Invoke(nameof(ShowInComingCallOpenInfo), 1f);
+    }
+    public void ShowInComingCallOpenInfo()
+    {
+        UIController.Singelton.ShowInfo("(!) Aramayı cevaplamak için Space tuşuna bas", 5);
+        StartCoroutine(WaitFKey());
+    }
+    private IEnumerator WaitFKey()
+    {
+        yield return new WaitUntil(() => Input.GetKeyDown(KeyCode.Space));
+        inComingCallAudioSource.Stop();
+        DialogController.Singelton.StartDialog(8);
+    }
+
 }

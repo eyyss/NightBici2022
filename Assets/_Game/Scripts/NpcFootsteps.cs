@@ -6,7 +6,6 @@ public class NpcFootsteps : MonoBehaviour
 {
     public Transform groundCheck;
     public LayerMask groundMask;
-    public bool isSprinting, isCrouching;
     public List<FootstepData> footstepDatas;
     [System.Serializable]
     public class FootstepData
@@ -17,6 +16,7 @@ public class NpcFootsteps : MonoBehaviour
 
     public void PlayFootstepSounds()
     {
+        if (!Application.isPlaying) return;
         if (Physics.Raycast(groundCheck.position, Vector3.down, out RaycastHit hit, 0.5f, groundMask))
         {
             if (hit.collider != null && hit.collider.TryGetComponent(out Renderer renderer))

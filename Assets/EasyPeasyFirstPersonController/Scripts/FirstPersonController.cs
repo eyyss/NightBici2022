@@ -82,7 +82,7 @@ namespace EasyPeasyFirstPersonController
         }
         private void HandleFootstep()
         {
-            if (moveInput.magnitude <= 0 || blockGlobal) return;
+            if (moveInput.magnitude <= 0 || blockGlobal || !isMove) return;
             if (Physics.Raycast(groundCheck.position, Vector3.down, out RaycastHit hit, 0.5f, groundMask))
             {
                 if (hit.collider != null && hit.collider.TryGetComponent(out Renderer renderer))
@@ -172,7 +172,7 @@ namespace EasyPeasyFirstPersonController
 
             HandleHeadBob();
 
-            bool wantsToCrouch = canCrouch && Input.GetKey(KeyCode.LeftControl) && !isSliding && !blockGlobal;
+            bool wantsToCrouch = canCrouch && Input.GetKey(KeyCode.LeftControl) && !isSliding && !blockGlobal && isMove;
             Vector3 point1 = transform.position + characterController.center - Vector3.up * (characterController.height * 0.5f);
             Vector3 point2 = point1 + Vector3.up * characterController.height * 0.4f;
             float capsuleRadius = characterController.radius * 0.95f;
@@ -303,6 +303,10 @@ namespace EasyPeasyFirstPersonController
             blockGlobal = !newState;
             isLook = newState;
             isMove = newState;
+        }
+        public void SetMove(bool state)
+        {
+            isMove = state;
         }
 
 
